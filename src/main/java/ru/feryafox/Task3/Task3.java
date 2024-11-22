@@ -1,11 +1,7 @@
 package ru.feryafox.Task3;
 
-import de.vandermeer.asciitable.AsciiTable;
 import ru.feryafox.Task3.ListBench.ListBench;
 import ru.feryafox.Task3.ListBench.ListBenches;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class Task3 {
     public static void main(String[] args) {

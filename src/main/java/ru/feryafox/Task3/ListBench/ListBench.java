@@ -5,7 +5,6 @@ import de.vandermeer.asciitable.AsciiTable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Random;
 
 public class ListBench {
     public static void doBench(Bench bench, int[] sizes, int attempts) {
@@ -20,8 +19,8 @@ public class ListBench {
         for (int i : sizes) {
 
             for (int j = 0; j < attempts; j++) {
-                arrayListResults.add(bench.run(new ArrayList<Integer>(), i));
-                linkedListResults.add(bench.run(new LinkedList<Integer>(), i));
+                arrayListResults.add(bench.run(new ArrayList<>(), i));
+                linkedListResults.add(bench.run(new LinkedList<>(), i));
 
             }
             long arrayList = calcMiddle(arrayListResults);

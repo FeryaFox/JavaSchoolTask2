@@ -1,12 +1,11 @@
 package ru.feryafox.Task2;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
 public class TelephoneDirectory {
-    private HashMap<String, ArrayList<String>> telephones = new HashMap<>();
+    private final HashMap<String, ArrayList<String>> telephones = new HashMap<>();
 
     public List<String> get(String surname) {
        return (ArrayList<String>) telephones.getOrDefault(surname, new ArrayList<>()).clone();
